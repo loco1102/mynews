@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class ProfileCntroller extends Controller
+class ProfileController extends Controller
 {
     //
     public function add()
@@ -30,6 +30,6 @@ class ProfileCntroller extends Controller
 }
 
 Route::group(['prefix' => 'admin'], function() {
-    Route::get('admin/profile/creat', 'Admin\ProfileController@add');
+    Route::get('admin/profile/create', 'Admin\ProfileController@add');
     Route::get('admin/profile/edit', 'Admin\ProfileController@edit');
 });
